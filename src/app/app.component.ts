@@ -10,7 +10,11 @@ import {ButtonModule} from 'primeng/button';
 })
 export class AppComponent {
 
+
   name:string = 'eduardo';
+  value:number= 15000;
+  obj= { name: 'Lalo' }
+
 
   showName() {
     console.log( this.name );

@@ -1,6 +1,16 @@
-<h1>{{ name | titlecase }}</h1>
 
 
-<button pButton type="button" (click)="showName()">
-  Print name
+<div class="text-layout">
+  <h1>{{ name | titlecase }}</h1>
+  <h1>{{ value | number }}</h1>
+  <h1>{{ obj | json }}</h1>
+</div>
+
+
+
+<button pButton
+  type="button"
+  label="Print name"
+  class="p-button-sm"
+  (click)="showName()">
 </button>
