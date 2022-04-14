@@ -26,6 +26,10 @@ const routes: Routes = [
     component: ShortComponent
   },
   {
+    path: 'basics',
+    component: BasicsComponent
+  },
+  {
     path: '**',
     redirectTo: ''
   }
