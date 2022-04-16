@@ -9,8 +9,11 @@ import { SalesModule } from './sales/sales.module';
 
 // Change app local time
 import localEs from '@angular/common/locales/es-MX';
+import localFr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common'
 registerLocaleData( localEs );
+registerLocaleData( localFr );
+
 
 @NgModule({
   declarations: [
