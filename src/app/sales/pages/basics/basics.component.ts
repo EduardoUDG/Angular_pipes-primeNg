@@ -13,6 +13,6 @@ export class BasicsComponent {
   upperName: string = 'EDUARDO';
   fullName : string = 'EduARdo ChAvez';
 
-
+  dateActualy: Date = new Date();
 
 }

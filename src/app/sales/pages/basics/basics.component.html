@@ -30,3 +30,43 @@
   </div>
 
 </div>
+
+
+
+<div class="text-layout">
+  <h1>Date | Fecha | Pipe</h1>
+  <p>
+    Pipes para mostra las fechas
+  </p>
+
+  <div class="grid">
+    <div class="col-6">
+      <p-card>
+        <ul>
+          <li>Date</li>
+          <li>Date | date</li>
+          <li>Date | date:'short'</li>
+          <li>Date | date:'long'</li>
+          <li>Date | date:'MMM'</li>
+          <li>Date | date:'EEEE'</li>
+          <li>Date | date:'EEEE MMM'</li>
+        </ul>
+      </p-card>
+    </div>
+
+    <div class="col-6">
+      <p-card>
+        <ul>
+          <li>{{ dateActualy }}</li>
+          <li>{{ dateActualy | date }}</li>
+          <li>{{ dateActualy | date:'short' }}</li>
+          <li>{{ dateActualy | date:'long' }}</li>
+          <li>{{ dateActualy | date:'MMM' }}</li>
+          <li>{{ dateActualy | date:'EEEE' }}</li>
+          <li>{{ dateActualy | date:'EEEE MMM' }}</li>
+        </ul>
+      </p-card>
+    </div>
+  </div>
+
+</div>
