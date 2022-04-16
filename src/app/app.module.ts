@@ -1,11 +1,16 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
+
+// Personalized Module
 import { AppRouterModule } from './app-router.module';
+import { SharedModule } from './shared/shared.module';
 import { SalesModule } from './sales/sales.module';
 
+// Change app local time
+import localEs from '@angular/common/locales/es-MX';
+import { registerLocaleData } from '@angular/common'
+registerLocaleData( localEs );
 
 @NgModule({
   declarations: [
@@ -17,7 +22,9 @@ import { SalesModule } from './sales/sales.module';
     SharedModule,
     SalesModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'es-MX' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
