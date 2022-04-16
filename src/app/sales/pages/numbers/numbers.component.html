@@ -5,6 +5,7 @@
 
 
 <div class="grid">
+
   <div class="col-4">
     <p-card
       header="Net Sales"
@@ -27,7 +28,42 @@
           {{ (netSales + 100000) | number:'.2-2'}}
         </li>
       </ul>
-
     </p-card>
   </div>
+
+
+  <div class="col-4">
+    <p-card
+      header="Gross Sales"
+      subheader="Year present">
+      <ul>
+        <li>
+          {{ (netSales+2000000) | currency }}
+        </li>
+        <li>
+          {{ (netSales+2000000) | currency:'MXN':'' }}
+        </li>
+        <li>
+          {{ (netSales+2000000) | currency:'USD':'symbol-narrow':'1.4-4' }}
+        </li>
+      </ul>
+    </p-card>
+  </div>
+
+
+  <div class="col-4">
+    <p-card
+      header="Profits %"
+      subheader="Year present">
+      <ul>
+        <li>
+          {{ (percent) | percent }}
+        </li>
+        <li>
+          {{ (percent) | percent:'2.2-2' }}
+        </li>
+      </ul>
+    </p-card>
+  </div>
+
 </div>
