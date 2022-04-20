@@ -35,5 +35,12 @@ export class NoCommonsComponent  {
     this.customers.pop();
   }
 
+  // KeyValue Pipe
+  person = {
+    name: 'Eduardo',
+    age: 35,
+    address: 'Ottawa, Cánada'
+  }
+
 
 }
