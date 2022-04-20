@@ -42,5 +42,21 @@ export class NoCommonsComponent  {
     address: 'Ottawa, Cánada'
   }
 
+  // JSON pipe
+  heroes = [
+    {
+      name: 'Superman',
+      fly: true
+    },
+    {
+      name: 'Robin',
+      fly: false
+    },
+    {
+      name: 'Aquaman',
+      fly: false
+    }
+  ]
+
 
 }
