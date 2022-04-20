@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-no-commons',
@@ -59,4 +60,12 @@ export class NoCommonsComponent  {
   ]
 
 
+  // Async pipe
+  myObservable: Observable<number> = interval( 1000 );
+
+  promiseValue = new Promise( (resolve, reject)=>{
+    setTimeout(()=>{
+      resolve("We have promise data");
+    }, 3500);
+  });
 }
