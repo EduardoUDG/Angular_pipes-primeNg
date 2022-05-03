@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { MayusculasPipe } from './pipes/mayusculas.pipe';
 
 import { NumbersComponent } from './pages/numbers/numbers.component';
 import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
@@ -14,7 +15,8 @@ import { ShortComponent } from './pages/short/short.component';
     NumbersComponent,
     NoCommonsComponent,
     BasicsComponent,
-    ShortComponent
+    ShortComponent,
+    MayusculasPipe
   ],
   exports: [
     NumbersComponent,
