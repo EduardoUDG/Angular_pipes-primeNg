@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-short',
@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ShortComponent implements OnInit {
+export class ShortComponent {
 
-  constructor() { }
+  isUpperCase: boolean = true;
 
-  ngOnInit(): void {
+  handleToggleUpperCase():void {
+    this.isUpperCase = !this.isUpperCase;
   }
 
 }

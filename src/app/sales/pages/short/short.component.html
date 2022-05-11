@@ -1,4 +1,11 @@
 <div class="text-layout">
   <h1>Pipes personalizados</h1>
-  <p>Pipes creados por {{ 'nosotros' | mayusculas}}</p>
+  <p>Pipes creados por {{ 'nosotros' | mayusculas:isUpperCase}}</p>
 </div>
+
+<button pButton
+  type="button"
+  label="Toggle to upper case"
+  (click)="handleToggleUpperCase()"
+  class="p-button-outlined">
+</button>
