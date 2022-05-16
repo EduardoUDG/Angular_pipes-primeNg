@@ -12,6 +12,7 @@ import { Color } from './../../interfaces/hero.interfaces';
 export class ShortComponent {
 
   isUpperCase: boolean = true;
+  orderBy: string = '';
   heroes: Hero[] = [
     {
       name: 'Superman',
@@ -44,6 +45,11 @@ export class ShortComponent {
 
   handleToggleUpperCase():void {
     this.isUpperCase = !this.isUpperCase;
+  }
+
+  changeOrder( value:string ): void {
+    console.log(value);
+    this.orderBy = value;
   }
 
 }

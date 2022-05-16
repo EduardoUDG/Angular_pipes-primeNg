@@ -20,26 +20,29 @@
       type="button"
       icon="pi pi-sort"
       label="By name"
-      class="mr-1"></button>
+      class="mr-1"
+      (click)="changeOrder('name')"></button>
 
     <button pButton
       type="button"
       icon="pi pi-sort"
       label="By fly"
-      class="mr-1 p-button-success"></button>
+      class="mr-1 p-button-success"
+      (click)="changeOrder('fly')"></button>
 
     <button pButton
       type="button"
       icon="pi pi-sort"
       label="By color"
-      class="mr-1 p-button-danger"></button>
+      class="mr-1 p-button-danger"
+      (click)="changeOrder('color')"></button>
   </div>
 </p-toolbar>
 
 
 <div class="grid">
   <div class="col mt-2">
-    <p-table [value]="heroes | sort" responsiveLayout="scroll">
+    <p-table [value]="heroes | sort:orderBy " responsiveLayout="scroll">
       <ng-template pTemplate="header">
           <tr>
               <th>Name</th>
