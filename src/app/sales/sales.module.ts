@@ -7,6 +7,7 @@ import { NumbersComponent } from './pages/numbers/numbers.component';
 import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { ShortComponent } from './pages/short/short.component';
+import { FlyPipe } from './pipes/fly.pipe';
 
 
 
@@ -16,7 +17,8 @@ import { ShortComponent } from './pages/short/short.component';
     NoCommonsComponent,
     BasicsComponent,
     ShortComponent,
-    MayusculasPipe
+    MayusculasPipe,
+    FlyPipe
   ],
   exports: [
     NumbersComponent,
