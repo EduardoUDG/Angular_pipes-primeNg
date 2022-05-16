@@ -8,17 +8,21 @@ import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { ShortComponent } from './pages/short/short.component';
 import { FlyPipe } from './pipes/fly.pipe';
+import { SortPipe } from './pipes/sort.pipe';
 
 
 
 @NgModule({
   declarations: [
+    // Components
     NumbersComponent,
     NoCommonsComponent,
     BasicsComponent,
     ShortComponent,
+    // Pipe
     MayusculasPipe,
-    FlyPipe
+    FlyPipe,
+    SortPipe,
   ],
   exports: [
     NumbersComponent,
